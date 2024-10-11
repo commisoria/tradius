@@ -3,3 +3,4 @@ numpy==2.1.2
 pandas==2.2.3
 scikit_learn==1.5.2
 yfinance==0.2.44
+streamlit
