@@ -193,9 +193,7 @@ def calc_high(asset):
     estimation=int(round(array[0][0],))
     return estimation
 
-while True:
-    est=calc_high(asset=asset)
-    time.sleep(180)
-    st.write(est)
+est=calc_close(asset=asset)
+st.write(est)
 
 
