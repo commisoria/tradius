@@ -7,6 +7,7 @@ import numpy as np
 from keras.layers import Dense
 from keras.layers import LSTM
 from keras.layers import Dropout
+import streamlit as st
 
 asset='PAXG-USD'
 
@@ -192,5 +193,9 @@ def calc_high(asset):
     estimation=int(round(array[0][0],))
     return estimation
 
-est=calc_high(asset=asset)
-print(est)
+while True:
+    est=calc_high(asset=asset)
+    time.sleep(180)
+    st.write(est)
+
+
